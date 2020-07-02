@@ -14,6 +14,13 @@ public class test_scores {
      
      double grade = scores *01.0;
     JOptionPane.showMessageDialog(null,"This is your score "+ grade);
+    
+    if(grade >= 80) {
+    JOptionPane.showMessageDialog(null,"You did a good job");
+    	 }
+    if (grade < 80) {
+    	JOptionPane.showMessageDialog(null," You can do better next time");
+    }
 	}
 
 }
