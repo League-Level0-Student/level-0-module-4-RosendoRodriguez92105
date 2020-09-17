@@ -26,8 +26,16 @@ void draw() {
     X=maxX;
   }
   else {X=mouseX; }
-  ellipse(X,mouseY,20,20);
+  
   //hello
- 
+ if(mouseY<minY){
+   Y=minY;
+ }
+ else if(mouseY>maxY){
+    Y=maxY;
+  }
+  else {Y=mouseY; }
+  ellipse(X,Y,20,20);
+  ellipse(X+(512-374),Y,20,20);
   
 }
